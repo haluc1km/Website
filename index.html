@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/0b94431023.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+<link rel="icon" href="Images/KH-logos_transparent.png" type="image/icon type">
+<title>Kendall Haluch</title>
+
+    </head>
+<body>
+    <section class="intro">
+       <nav>
+        <ul id="nav-icons">
+          <li><a href="https://github.com/haluc1km">
+            <img src="Images/image.png" alt="github" ></a></li>
+            <li><a  href="https://www.instagram.com/k_haly/">
+              <img src="Images/image (1).png" alt="instagram" ></a></li>
+              <li><a href="https://www.linkedin.com/in/kendall-haluch-068383220/">
+                <img src="Images/image (2).png" alt="linkedin" ></a></li>
+         </ul>
+          <ul id="nav-list">
+             <li><a href="#about-me">About Me</a></li>
+             <li><a href="#projects">Projects</a></li>
+             <li><a href="#contact">Contact Me</a></li>
+          </ul>
+          <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a><br></a>
+            <a id= "menu-link" href="#about-me">About</a>
+            <a><br></a>
+            <a id= "menu-link" href="#projects">Projects</a>
+            <a><br></a>
+            <a id= "menu-link" href="#contact">Contact Me</a>
+            <ul id="mobile-icons">
+              <li><a class = "mobile-link" href="https://github.com/haluc1km">
+                <img src="Images/imageedit_5_5747943714.png" alt="github" ></a></li>
+                <li><a class = "mobile-link" href="https://www.instagram.com/k_haly/">
+                  <img src="Images/imageedit_2_4593249658.png" alt="instagram" ></a></li>
+                  <li><a class = "mobile-link" href="https://www.linkedin.com/in/kendall-haluch-068383220/">
+                    <img src="Images/imageedit_3_6226651661.png" alt="linkedin" ></a></li>
+             </ul>
+          </div>
+          <button class="mobile_menu" id="mobile_menu" onclick="openNav()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+       </nav>
+       <div class="intro-area">
+          <div class="intro-text">
+             <h1>Kendall Haluch</h1>
+             <p>Student Web Developer / Coder</p>
+          <div class="socials">
+             <div>
+             </div>
+          </div>
+       </div>
+    </section>
+    <section class="sub-background">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      </section>
+    <section class="sub-section" id="about-me">
+       <div class="information">
+          <h2>About Me</h2>
+          <p>I'm a sophomore at Central Michigan University with majors in Computer Science & Information Technology
+             and I am minoring in Leadership. I am passionate about turning great concepts 
+             into works of art through my coding. I am at my best when working with others, and exploring how to make 
+             great ideas even better.
+          </p>
+       </div>
+       <div class="picture">
+          <img class="picture" src="images/cropped.png" alt="headshot" ></a>
+       </div>
+       
+    </section>
+    <section class="sub-section-alternative" id="projects">
+      <br>
+      <br>
+      <br>
+       <h2 class="projects">Projects</h2>
+       <span></span>
+        <main>
+            <div class="project" onclick="expand(this)">
+                <div class="project__banner" style="background-color: rgb(153,255,204);"></div>
+                <div>
+                  <div class="project__pic">
+                      <img src="Images/Savex.JPG" alt="SaveEx">
+                  </div>
+                  <div class="project__info">
+                      <span class="project__info-display">SaveEx</span>
+                      <span class="project__data-language">Java Project</span>
+                      <br>
+                      <br>
+                  </div>
+              </div>
+              <div class="project__data">
+                  <span class="project__data-info">
+                   <span class="project__data-links"><a href="https://github.com/haluc1km/savEX">
+                      <img src="Images/GitHub-Mark-32px.png" alt="github" ></a>
+                      <button data-window3-target="#window3" id = "button">View Project</button>
+                   <div class="window3" id="window3">
+                     <div class="window3-header">
+                       <div class="title">SavEx Project</div>
+                       <button data-close3-button class="close-button">&times;</button>
+                     </div>
+                     <div class="window3-body">
+                       <div class="slideshow-container2">
+                          <div class="mySlides4">
+                            <video style = "width:100%" controls>
+                              <source src="Images/savex demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video>
+                          </div>
+                        
+                          <div class="mySlides4">
+                            <img src="Images/Screenshot (4).png" style="width:100%">
+                          </div>
+
+                          <div class="mySlides4">
+                            <img src="Images/Screenshot (5).png" style="width:100%">
+                          </div>
+                        
+                          <div class="mySlides4">
+                            <img src="Images/Screenshot (6).png" style="width:100%">
+                          </div>
+                        
+                          <a class="prev" onclick="plusSlides1(-1, 0)">&#10094;</a>
+                          <a class="next" onclick="plusSlides1(1, 0)">&#10095;</a>
+                        </div>
+                     </div>
+                   </div>
+                   <div id="overlay3"></div>
+                  </span>
+                  <span class="project__data-info"></span>
+                      <span class="project__data-following-label"><br>I made this project for my CPS 240 class, Object Oriented programming.
+                         Our goal for this project was to be able to find keywords spoken from a lecture and show them. We also
+                         wanted a function that could record and make a transcript if your professor did not upload theirs.
+                      </span>
+                </span> 
+            </div>
+            </div>
+            <div class="project" onclick="expand(this)">
+                <div class="project__banner" style="background-color: rgb(255, 202, 211);"></div>
+                <div>
+                    <div class="project__pic">
+                        <img src="Images/klogo.png" alt="KH">
+                    </div>
+                    <div class="project__info">
+                        <span class="project__info-display">My Porfolio</span>
+                        <span class="project__data-language">HTML,CSS,JS</span>
+                    </div>
+                </div>
+                <div class="project__data">
+                  <span class="project__data-info">
+                     <span class="project__data-links"><a href="https://github.com/haluc1km/KendallHaluch.dev">
+                        <img src="Images/GitHub-Mark-32px.png" alt="github" ></a>
+                        <button data-window1-target="#window1" id = "button">View Project</button>
+                        <div class="window1" id="window1">
+                          <div class="window1-header">
+                            <div class="title">KendallHaluch.dev</div>
+                            <button data-close-button class="close-button">&times;</button>
+                          </div>
+                          <div class="window1-body">
+                           <div class="slideshow-container">
+                              <div class="mySlides2">
+                                <img src="Images/image-from-rawpixel-id-3886197-png.jpg" style="width:100%">
+                              </div>
+                            
+                              <div class="mySlides2">
+                                <img src="Images/Screenshot (14).png" style="width:100%">
+                              </div>
+
+                            
+                              <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                              <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="overlay1"></div>
+                       </span>
+                       <span class="project__data-info"></span>
+                    <span class="project__data-following-label"><br>You are here! I made this website as my own personal portfolio to house
+                      all of my projects, past, current, and i'll add one that I do in the future as well. This helped me hone my skills as a Web Developer
+                      and use my own knowledge of HTML, CSS, and Javascript!
+                    </span>
+                  </span> 
+              </div>
+            </div>
+<div class="project" onclick="expand(this)">
+                <div class="project__banner" style="background-color: rgba(155,189,255,1);"></div>
+                <div>
+                  <div class="project__pic">
+                      <img src="Images/morsecode.png" alt="Raspberry Pi">
+                  </div>
+                  <div class="project__info">
+                      <span class="project__info-display">Morse Code Decoder</span>
+                      <span class="project__data-language">Raspberry Pi, C</span>
+                  </div>
+              </div>
+              <div class="project__data">
+                <span class="project__data-info">
+                  <span class="project__data-links"><a href="https://github.com/haluc1km/Morse-Code-Decoder/tree/main">
+                     <img src="Images/GitHub-Mark-32px.png" alt="github" ></a>
+                     <button data-window2-target="#window2" id = "button">View Project</button>
+                     <div class="window2" id="window2">
+                       <div class="window2-header">
+                         <div class="title">Morse Code Decoder</div>
+                         <button data-close2-button class="close-button">&times;</button>
+                       </div>
+                       <div class="window2-body">
+                         <div class="slideshow-container2">
+                            <div class="mySlides3">
+                              <video style = "width:100%" controls>
+                                <source src="Images/425787_movie.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                              </video>
+                            </div>
+                          
+                            <div class="mySlides3">
+                              <img src="Images/Picture1.jpg" style="width:100%">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides1(-1, 1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides1(1, 1)">&#10095;</a>
+                          </div>
+                       </div>
+                     </div>
+                     <div id="overlay2"></div>
+                    </span>
+                    <span class="project__data-info"></span>
+                    <span class="project__data-following-label"><br>I made this project for my CPS 210 class, Computer Organization and Communication.
+                       I programmed this in C and used a Raspberry Pi. You can put in morse code through the button on the breadboard and output in text on the console, or put 
+                       in a message and the LED on the breadboard will output the message in morse code.
+                    </span>
+                </span> 
+            </div>
+            </div>
+<div class="project" onclick="expand(this)">
+                <div class="project__banner" style="background-color:  rgb(221,204,255);"></div>
+                <div>
+                  <div class="project__pic">
+                      <img src="Images/tictactoe.png" alt="Tic Tac Toe">
+                  </div>
+                  <div class="project__info">
+                      <span class="project__info-display">Tic Tac Toe</span>
+                      <span class="project__data-language">Python</span>
+                  </div>
+              </div>
+              <div class="project__data">
+                <span class="project__data-info">
+                  <span class="project__data-links"><a href="https://github.com/haluc1km/TicTacToe">
+                     <img src="Images/GitHub-Mark-32px.png" alt="github" ></a>
+                     <button data-window-target="#window" id = "button">View Project</button>
+                        <div class="window" id="window">
+                          <div class="window-header">
+                            <div class="title">Tic Tac Toe</div>
+                            <button data-closew-button class="close-button">&times;</button>
+                          </div>
+                          <div class="window-body">
+                            <div class="slideshow-container">
+                               <div class="mySlides1">
+                                <video style = "width:100%" controls>
+                                  <source src="Images/tictactoe demo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                                </video>
+                               </div>
+                             
+                               <div class="mySlides1">
+                                 <img src="Images/Screenshot (11).png" style="width:100%">
+                               </div>
+                             
+                               <div class="mySlides1">
+                                 <img src="Images/Screenshot (12).png" style="width:100%">
+                               </div>
+                             
+                               <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                               <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                             </div>
+                          </div>
+                        </div>
+                        <div id="overlay"></div>
+                       </span>
+                       <span class="project__data-info"></span>
+                    <span class="project__data-following-label"><br>I made this project for my own pleasure as well as to expand my knowledge
+                      of python coding because i only knew the basics. I utilized pygame which is a python module used for making games.
+                    </span>
+                    </span> 
+                </div>
+            </div>
+<!-- style="background-color: rgb(255,128,128);-->
+        </main>
+      <br>
+
+    </section>
+    <section class="sub-background1">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      </section>
+<div class = "foot">
+   <section class = "footer" id = "contact">
+      <section class="get-in-touch">
+         <h1 class="title">Contact Me!</h1>
+         <form action="https://formspree.io/f/mjvlabvz"  method="POST" class="contact-form row">
+            <div class="form-field col x-50">
+               <input name id="name" name="name" class="input-text js-input" type="text" required>
+               <label class="label" for="name">Name</label>
+            </div>
+            <div class="form-field col x-50">
+               <input email id="email" name="email" class="input-text js-input" type="email" required>
+               <label class="label" for="email">E-mail</label>
+            </div>
+            <div class="form-field col x-100">
+               <input message id="message" name="message" class="input-text js-input" type="text" required>
+               <label class="label" for="message">Message</label>
+            </div>
+            <div class="form-field col x-100 align-center">
+               <input class="submit" id ="submit" type="submit" value="Submit"" >
+            </div>
+         </form>
+      </section>
+   </section>
+</div>
+    <script src="js/script.js"></script>
+    <script src="js/slideshow.js"></script>
+ </body>
+ </html>
