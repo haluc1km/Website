@@ -7,6 +7,20 @@ $( '.js-input' ).keyup(function() {
 	}
   });
 
+  function disableScroll() {
+    // Get the current page scroll position
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+  
+        // if any scroll is attempted, set this to the previous value
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+  }
+  
+  function enableScroll() {
+    window.onscroll = function() {};
+  }
 
   window.onbeforeunload = () => {
     for(const form of document.getElementsByTagName('form')) {
@@ -25,8 +39,6 @@ $( '.js-input' ).keyup(function() {
     document.getElementById("main").style.marginLeft = "0";
   }
 
-  const video = document.querySelector("#video");
-
 
   const openwindowButtons = document.querySelectorAll('[data-window-target]')
   const closewindowButtons = document.querySelectorAll('[data-closew-button]')
@@ -39,6 +51,7 @@ $( '.js-input' ).keyup(function() {
     button.addEventListener('click', () => {
       const window = document.querySelector(button.dataset.windowTarget)
     clicked = true
+    disableScroll()
     xButton = false
       openwindow(window)
     })
@@ -47,6 +60,7 @@ $( '.js-input' ).keyup(function() {
   overlay.addEventListener('click', () => {
     clicked = false
       xButton = true
+      enableScroll()
     const windows = document.querySelectorAll('.window.active')
     windows.forEach(window => {
       closewindow(window)
@@ -56,6 +70,7 @@ $( '.js-input' ).keyup(function() {
   closewindowButtons.forEach(button => {
     button.addEventListener('click', () => {
       clicked = false
+      enableScroll()
       xButton = true
       const window = button.closest('.window')
       closewindow(window)
@@ -83,6 +98,7 @@ $( '.js-input' ).keyup(function() {
     
     openwindow1buttons.forEach(button => {
       button.addEventListener('click', () => {
+        disableScroll()
         const window1 = document.querySelector(button.dataset.window1Target)
       clicked1 = true
       xButton1 = false
@@ -91,6 +107,7 @@ $( '.js-input' ).keyup(function() {
     })
     
     overlay1.addEventListener('click', () => {
+      enableScroll()
       clicked1 = false
         xButton1 = true
       const window1s = document.querySelectorAll('.window1.active')
@@ -102,6 +119,7 @@ $( '.js-input' ).keyup(function() {
     closewindow1buttons.forEach(button => {
       button.addEventListener('click', () => {
         clicked1 = false
+        enableScroll()
         xButton1 = true
         const window1 = button.closest('.window1')
         closewindow1(window1)
@@ -131,6 +149,7 @@ $( '.js-input' ).keyup(function() {
           button.addEventListener('click', () => {
             const window2 = document.querySelector(button.dataset.window2Target)
           clicked2 = true
+          disableScroll()
           xButton2 = false
             openwindow2(window2)
           })
@@ -139,6 +158,7 @@ $( '.js-input' ).keyup(function() {
         overlay2.addEventListener('click', () => {
           clicked2 = false
             xButton2 = true
+            enableScroll()
           const window2s = document.querySelectorAll('.window2.active')
           window2s.forEach(window2 => {
             closewindow2(window2)
@@ -149,6 +169,7 @@ $( '.js-input' ).keyup(function() {
           button.addEventListener('click', () => {
             clicked2 = false
             xButton2 = true
+            enableScroll()
             const window2 = button.closest('.window2')
             closewindow2(window2)
           })
@@ -175,6 +196,7 @@ $( '.js-input' ).keyup(function() {
           
           openwindow3buttons.forEach(button => {
             button.addEventListener('click', () => {
+              disableScroll()
               const window3 = document.querySelector(button.dataset.window3Target)
             clicked3 = true
             xButton3 = false
@@ -184,6 +206,7 @@ $( '.js-input' ).keyup(function() {
           
           overlay3.addEventListener('click', () => {
             clicked3 = false
+            enableScroll()
               xButton3 = true
             const window3s = document.querySelectorAll('.window3.active')
             window3s.forEach(window3 => {
@@ -195,7 +218,7 @@ $( '.js-input' ).keyup(function() {
             button.addEventListener('click', () => {
               clicked3 = false
               xButton3 = true
-              
+              enableScroll()
               const window3 = button.closest('.window3')
               closewindow3(window3)
               video.pause();
