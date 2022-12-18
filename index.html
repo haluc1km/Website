@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lusitana:400,700" rel="stylesheet">
 <link rel="icon" href="Images/KH-logos_transparent.png" type="image/icon type">
 <title>Kendall Haluch</title>
 
@@ -53,10 +54,6 @@
           <div class="intro-text">
              <h1>Kendall Haluch</h1>
              <p>Student Web Developer / Coder</p>
-          <div class="socials">
-             <div>
-             </div>
-          </div>
        </div>
     </section>
     <section class="sub-background">
@@ -71,7 +68,7 @@
        <div class="information">
           <h2>About Me</h2>
           <p>I'm a sophomore at Central Michigan University with majors in Computer Science & Information Technology
-             and I am minoring in Leadership. I am passionate about turning great concepts 
+             and I am minoring in Game Design Thinking. I am passionate about turning great concepts 
              into works of art through my coding. I am at my best when working with others, and exploring how to make 
              great ideas even better.
           </p>
@@ -295,7 +292,66 @@
                     </span> 
                 </div>
             </div>
-<!-- style="background-color: rgb(255,128,128);-->
+            <div class="project" onclick="expand(this)">
+              <div class="project__banner" style="background-color: rgb(255,128,128);"></div>
+              <div>
+                <div class="project__pic">
+                    <img src="Images/Dog Cat Pet Accessories Shop Logo.png" alt="Automatic Dog Feeder">
+                </div>
+                <div class="project__info">
+                    <span class="project__info-display">Automatic Dog Feeder</span>
+                    <span class="project__data-language">Raspberry Pi,Python,HTML</span>
+                </div>
+            </div>
+            <div class="project__data">
+              <span class="project__data-info">
+                <span class="project__data-links"><a href="https://github.com/haluc1km/Automatic-Dog-Feeder">
+                   <img src="Images/GitHub-Mark-32px.png" alt="github" ></a>
+                   <a href="DogFeeder/index.html" class = "website_link" alt = "Wilson Website" font-family = 'Lusitana', sans-serif; >Website Link</a>
+                   <button data-window4-target="#window4" id = "button">View Project</button>
+                   <div class="window4" id="window4">
+                     <div class="window4-header">
+                       <div class="title">Automatic Dog Feeder</div>
+                       <button data-close4-button class="close-button">&times;</button>
+                     </div>
+                     <div class="window4-body">
+                       <div class="slideshow-container">
+                          <div class="mySlides5">
+                            <video style = "width:100%" controls>
+                              <source src="Images/Prototype.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video>
+                          </div>
+
+                          <div class="mySlides5">
+                            <img src="Images/IMG_8546.jpg" style="width:100%">
+                          </div>
+
+                          <div class="mySlides5">
+                            <img src="Images/IMG_8547.jpeg" style="width:100%">
+                          </div>
+                        
+                          <div class="mySlides5">
+                            <img src="Images/wilsonwebsite.jpg" style="width:100%">
+                          </div>
+                        
+
+
+                          <a class="prev" onclick="plusSlides2(-1, 0)">&#10094;</a>
+                          <a class="next" onclick="plusSlides2(1, 0)">&#10095;</a>
+                        </div>
+                     </div>
+                   </div>
+                   <div id="overlay4"></div>
+                  </span>
+                  <span class="project__data-info"></span>
+                  <span class="project__data-following-label"><br>I made this project as a Christmas gift for my sister and her dog Wilson.
+                    It uses a Raspberry Pi that gets data from a website that tells it whether to give a treat, display a joke, or some fun trivia.
+                    The raspberry Pi receives the signal and through a python script, will allow the motor to deliver the treats.
+                  </span>
+              </span> 
+          </div>
+          </div>
         </main>
       <br>
 

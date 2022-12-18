@@ -238,11 +238,63 @@ $( '.js-input' ).keyup(function() {
             overlay3.classList.remove('active')
 
             }
+            const openwindow4buttons = document.querySelectorAll('[data-window4-target]')
+            const closewindow4buttons = document.querySelectorAll('[data-close4-button]')
+            
+            const overlay4 = document.getElementById('overlay4')
+            var clicked4 = false
+            var xButton4 = false
+            
+            openwindow4buttons.forEach(button => {
+              button.addEventListener('click', () => {
+                disableScroll()
+                const window4 = document.querySelector(button.dataset.window4Target)
+              clicked4 = true
+              xButton4 = false
+                openwindow4(window4)
+              })
+            })
+            
+            overlay4.addEventListener('click', () => {
+              clicked4 = false
+              enableScroll()
+                xButton4 = true
+              const window4s = document.querySelectorAll('.window4.active')
+              window4s.forEach(window4 => {
+                closewindow4(window4)
+              })
+            })
+            
+            closewindow4buttons.forEach(button => {
+              button.addEventListener('click', () => {
+                clicked4 = false
+                xButton4 = true
+                enableScroll()
+                const window4 = button.closest('.window4')
+                closewindow4(window4)
+                video.pause();
+                video.currentTime = 0;
+              })
+            })
+            
+            function openwindow4(window4) {
+              if (window4 == null) return
+              window4.classList.add('active')
+              overlay4.classList.add('active')
+            }
+            
+            function closewindow4(window4) {
+              if (window4 == null) return
+              window4.classList.remove('active')
+              overlay4.classList.remove('active')
+  
+              }
+    
   
 
 
 function expand(card) {
-	if((clicked == false && xButton == false) && (clicked1 == false && xButton1 == false) &&(clicked2 == false && xButton2 == false)&&(clicked3 == false && xButton3 == false)){
+	if((clicked == false && xButton == false) && (clicked1 == false && xButton1 == false) &&(clicked2 == false && xButton2 == false)&&(clicked3 == false && xButton3 == false)&&(clicked4 == false && xButton4 == false)){
 	card.classList.toggle('project--expanded')
 
 	// If card is not expanded after toggle, add 'unexpanded' class
@@ -255,6 +307,7 @@ function expand(card) {
 			xButton1 = false
       xButton2 = false
       xButton3=false
+      xButton4 =false
 		}
 }
 

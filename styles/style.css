@@ -158,9 +158,8 @@ html {
   }
   
   .intro-text {
-    margin-top: 15vh;
     width: 100%;
-    margin-bottom: 5vh;
+    margin-bottom: 25vh;
   }
   
 
@@ -229,11 +228,13 @@ main {
   flex-grow:inherit;
   justify-content: space-evenly;
   flex-basis: auto;
-  margin: auto;
-}
+  margin: auto;}
+
 .project__data-links a{
-  color:#000;
-  font-size: 16px;
+  color:rgb(42, 42, 42);
+  font-size: 17px;
+  font-family: 'Lusitana', sans-serif;
+  
 }
 
     .project:hover {
@@ -613,6 +614,14 @@ main {
     font-size: 1.25rem;
     font-weight: bold;
   }
+  .window4-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
   .window-header .close-button {
     cursor: pointer;
     border: none;
@@ -672,6 +681,19 @@ main {
     width: 500px;
     max-width: 80%;
   }
+  .window4 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #e0e0e0;
+    width: 500px;
+    max-width: 80%;
+  }
   
   
   .window1.active{
@@ -681,6 +703,9 @@ main {
     transform: translate(-50%, -50%) scale(1);
   }
   .window3.active{
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .window4.active{
     transform: translate(-50%, -50%) scale(1);
   }
   .window1-header{
@@ -705,6 +730,13 @@ main {
     align-items: center;
     border-bottom: 1px solid black;
   }
+  .window4-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
 
   .window1-header .title {
     font-size: 1.25rem;
@@ -718,6 +750,10 @@ main {
     font-size: 1.25rem;
     font-weight: bold;
   }
+  .window4-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
   .window1-body {
     padding: 10px 15px;
   }
@@ -725,6 +761,9 @@ main {
     padding: 10px 15px;
   }
 .window3-body {
+  padding: 10px 15px;
+}
+.window4-body {
   padding: 10px 15px;
 }
   .window {
@@ -815,11 +854,26 @@ main {
     background-color: rgba(255, 255, 255, 0);
     pointer-events: none;
   }
+  #overlay4 {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0);
+    pointer-events: none;
+  }
   #overlay2.active {
     opacity: 1;
     pointer-events: all;
   }
   #overlay3.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  #overlay4.active {
     opacity: 1;
     pointer-events: all;
   }
