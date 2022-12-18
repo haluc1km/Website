@@ -21,12 +21,12 @@ html {
     font-family: 'Questrial', sans-serif;
   }
   .sub-background{
-    background: linear-gradient(184deg, #212531 50%, rgba(224, 224, 224,1) 50.3%);
+    background: linear-gradient(184deg, #212531 50%, rgba(255,255,255,1) 50.3%);
     height: 15vh;
   }
 
   .sub-background1{
-    background: linear-gradient(176deg, rgba(224, 224, 224,1) 50%, rgb(204,238,255) 50.3%);
+    background: linear-gradient(176deg, rgba(255,255,255,1) 50%, rgb(204,238,255) 50.3%);
     height: 15vh;
   }
   
